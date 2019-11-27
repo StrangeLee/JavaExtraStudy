@@ -1,8 +1,4 @@
-package com.strange.lee;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+package study;
 
 public class FindTargetNumber {
     // 정수 배열과 타겟 숫자가 주어지면, 합이 타겟값이 되는 두 원소의 인덱스를 찾으시오.

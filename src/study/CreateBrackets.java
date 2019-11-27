@@ -1,4 +1,4 @@
-package com.strange.lee;
+package study;
 
 import java.util.ArrayList;
 import java.util.List;
