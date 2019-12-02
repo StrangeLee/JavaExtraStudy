@@ -5,7 +5,6 @@ import java_book_project.console.Main;
 import java_book_project.user.User;
 import java_book_project.user.UserFunction;
 
-import java.net.SecureCacheResponse;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -134,6 +133,7 @@ public class BookFunction {
         new BookFunction(2);
     }
 
+    // 책 대출
     public static void borrowBook(String bookNum, User user) {
         Scanner sc = new Scanner(System.in);
         var inputString = "";
@@ -156,6 +156,7 @@ public class BookFunction {
         }
     }
 
+    // 기본 데이터 생성
     public static void setBooks() {
         var bookNames = "조던의 역사, 조선왕조실록, 세계사, 노인과 바다, 지킬앤 파이드".split(", ");
         for (int i = 0; i < 5; i++) {
@@ -168,6 +169,15 @@ public class BookFunction {
             bookCount++;
             novelCount++;
         }
+    }
+
+    // 대출된 책 현황
+    public static void printCounts() {
+        System.out.println("현재 빌릴 수 있는 책 수: " + bookCount);
+        System.out.println("소설 책 수: " + novelCount);
+        System.out.println("시 책 수: " + poemCount);
+        System.out.println("스포츠 책 수: " + sportsCount);
+        System.out.println("기타 책 수: " + otherCount);
     }
 
     public static void main(String[] args) {
