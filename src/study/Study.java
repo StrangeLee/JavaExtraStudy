@@ -2,6 +2,7 @@ package study;
 
 // 백준 사이트의 문제 풀이
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 class Study {
@@ -42,5 +43,6 @@ class Study {
 
         return divideNum(num);
     }
+
 
 }

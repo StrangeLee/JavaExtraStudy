@@ -22,6 +22,7 @@ public class SortArrayWithZero {
             else
                 list.add(array[i]);
         }
+        list.sort(Comparator.naturalOrder());
         list.sort(Comparator.reverseOrder());
 
         for (int i = 0; i < zeroCount; i++) {
