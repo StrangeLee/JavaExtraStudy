@@ -30,11 +30,10 @@ public class UserArrayStack {
         stack[top--] = 0;
     }
 
-    // 배열로 했을 때 stack 클래스 와 같이 몇번째 위치인지를 반환 할 수 없음. 
     private int search(int item) {
-        for (int i = 0; i < this.size; i++) {
+        for (int i = 0; i <= top; i++) { // for 문은 top 만큼
             if (stack[i] == item)
-                return (i + 1);
+                return (top - i) + 1; // top - 탐색한 배열의 인덱스, 배열 이므로 +1 추가
         }
         return -1;
     }
@@ -51,7 +50,7 @@ public class UserArrayStack {
         }
         stack.pop(); // 최근에 추가한 데이터 삭제
         stack.peek();
-        System.out.println(stack.search(7));
+        System.out.println(stack.search(4));
         System.out.println(stack.empty()); // false 면 값이 있음, true 면 없음.
     }
 }
