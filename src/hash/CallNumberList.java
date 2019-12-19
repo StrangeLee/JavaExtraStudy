@@ -8,16 +8,8 @@ public class CallNumberList {
 
     public boolean solution(String[] phone_book) {
         boolean answer = true;
-        HashMap<String, String> phoneMap = new HashMap<>();
-        HashSet<String> phoneHash = new HashSet<>();
 
-        for (String phone :
-                phone_book) {
-            //phoneMap.put(phone, phoneMap.containsKey());
-            phoneHash.add(phone);
-        }
-
-        return answer = true;
+        return true;
     }
 
     public static void main(String[] args) {
