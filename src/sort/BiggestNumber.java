@@ -13,12 +13,12 @@ public class BiggestNumber {
             for (int j = 0; j < numbers.length; j++) {
                 Random ran = new Random();
                 for (int k = 0; k < j; k++) {
-                    arrays[j] = numbers[ran.nextInt(numbers.length) + 0];
+                    arrays[j] = numbers[ran.nextInt(numbers.length)];
                     if (arrays[k] == arrays[j])
                         j--;
                     else {
                         answer += arrays[j];
-                        System.out.println(answer);
+                        System.out.println("j : " + j + " value : " + arrays[j]);
                     }
                 }
                 //answer += numbers[ran.nextInt(numbers.length) + 0];
