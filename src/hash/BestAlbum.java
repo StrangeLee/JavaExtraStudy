@@ -1,5 +1,9 @@
 package hash;
 
+/**
+ *
+ */
+
 public class BestAlbum {
 
     int[] solution(String [] genres, int[] plays) {

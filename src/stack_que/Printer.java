@@ -1,6 +1,8 @@
 package stack_que;
 
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * 프로그래머스 코테 연습 > 스택/큐 < 프린터 문제 풀이
@@ -14,22 +16,19 @@ import java.util.HashMap;
 public class Printer {
 
     public int solution(int[] priorities, int location) {
-        HashMap<Integer, Integer> items = new HashMap<>();
-
         int bigNum = 0;
         int bigIndex = 0;
         for (int i = 0; i < priorities.length; i++) {
-            items.put(i, priorities[i]);
             if (bigNum < priorities[i]) {
                 bigNum = priorities[i];
                 bigIndex = i;
             }
         }
 
-        if (location == bigIndex) {
+        if (bigNum == priorities[location]) {
             return 1;
         } else {
-            return items.size() - bigIndex + (location + 1);
+            return priorities.length - bigIndex + (location + 1);
         }
     }
 

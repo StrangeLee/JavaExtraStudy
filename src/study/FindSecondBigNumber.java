@@ -3,6 +3,13 @@ package study;
 import java.util.ArrayList;
 import java.util.Comparator;
 
+/**
+ * 두번 째로 큰 수 찾기
+ * 제일 편한 방법은 list 에 옮긴 후 Comparator.reverseOrder() 로 하면 내림 차순정렬 이므로
+ * list.get(1)을 하면 두번째로 큰 수를 얻을 수 있다.
+ * 정렬 알고리즘을 이용하여 푸는 방법이 있으나 정렬 알고리즘은 내가 아직 익히지 못했다.
+ */
+
 public class FindSecondBigNumber {
 
     public FindSecondBigNumber(int [] array) {

@@ -2,7 +2,9 @@ package hash;
 
 import java.util.*;
 
-// 프로그래머스 - 코딩테스트 연습(해시) : 완주하지 못한 선수
+/**
+ * 프로그래머스 코테연습 > 해시 > 완주하지 못한 선수
+ */
 public class IncompletionMarathon {
 
     public IncompletionMarathon() {
