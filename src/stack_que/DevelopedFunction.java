@@ -1,20 +1,23 @@
 package stack_que;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class DevelopedFunction {
 
     public int[] solution(int[] progresses, int[] speeds) {
+        Queue<Integer> queue = new ArrayDeque<>();
         int[] answer = {};
         int[] distribute = new int[progresses.length];
         int[] results = new int[progresses.length];
 
         for (int i = 0; i < progresses.length; i++) {
             int count = 0;
-            for(;progresses[i] >= 100; progresses[i] += speeds[i]) {
-                count ++;
+            System.out.println("Enter while when i is " + i);
+            while (progresses[i] >= 100) {
+                count++;
                 System.out.println(count);
+
+                progresses[i] += speeds[i];
             }
             distribute[i] = count;
         }
